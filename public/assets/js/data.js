@@ -3,12 +3,18 @@ const data = [
     title: 'Product preview card component',
     url: './public/views/product-preview-card-component/index.html',
     img: './public/assets/img/product-preview-card-component.png',
-    tags: ['html', 'css', 'javascipt']
+    tags: ['html', 'css']
   },
   {
     title: 'QR code',
     url: 'https://amaya-14.github.io/qr-code/',
     img: './public/assets/img/qr-code.png',
+    tags: ['html', 'css', 'javascipt']
+  },
+  {
+    title: 'Interactive rating component',
+    url: './public/views/interactive-rating-component/index.html',
+    img: './public/assets/img/interactive-rating-component.png',
     tags: ['html', 'css', 'javascipt']
   }
 ]
@@ -28,7 +34,7 @@ dataOrder.forEach(async (item) => {
 
   let listTags = ''
 
-  tags.forEach(tag => {
+  tags?.forEach(tag => {
     listTags += `
     <p>${tag}</p>
     `

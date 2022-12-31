@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --orange: rgb(251, 116, 19);
+
+  --white: rgb(255, 255, 255);
+  --light-grey: rgb(149, 158, 172);
+  --medium-grey: rgb(125, 136, 153);
+  --dark-blue: rgb(37, 45, 55);
+  --very-dark-blue: rgb(18, 20, 23);
+}
+
+html {
+  height: fill-available;
+  min-height: -moz-available;
+  height: -webkit-fill-available;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--very-dark-blue);
+
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(var(--vh, 1vh) * 100);
+  padding: 0 1.5rem;
+}
+
+.card {
+  width: auto;
+  max-width: 350px;
+  height: 360px;
+  border-radius: 16px;
+  padding: 25px;
+  background-color: var(--dark-blue);
+}
+
+.card__front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.card__start {
+  display: inline-grid;
+  width: fit-content;
+  place-items: center;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: rgb(55, 63, 73);
+}
+
+.card__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.card__description {
+  color: var(--light-grey);
+  font-size: 15px;
+}
+
+.card__rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating__item {
+  background-color: aqua;
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  color: var(--medium-grey);
+  cursor: pointer;
+  background-color: rgb(55, 63, 73);
+  text-align: center;
+}
+
+.rating__item--hover:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rating__item--select {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+
+.card__button {
+  cursor: pointer;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 30px;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Overpass';
+  font-weight: 700;
+}
+
+.card__button:active .card {
+  -webkit-animation: flip-vertical-right 0.4s linear;
+  animation: flip-vertical-right 0.4s linear;
+}
+
+.card__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.card__title--back {
+  text-align: center;
+}
+
+.card__description--back {
+  text-align: center;
+}
+
+.card__rating--back {
+  width: max-content;
+  font-size: 14px;
+  background-color: rgb(55, 63, 73);
+  color: var(--orange);
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.flip-vertical-right {
+  -webkit-animation: flip-vertical-right 0.5s linear;
+  animation: flip-vertical-right 0.5s linear;
+}
+
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
