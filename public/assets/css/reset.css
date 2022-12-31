@@ -16,17 +16,9 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
-  /* opcional */
   line-height: 1.4em;
-  /* opcional */
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  /* opcional */
   font-smooth: always;
-  /* opcional */
   -webkit-font-smoothing: antialiased;
-  /* opcional */
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -75,10 +67,8 @@ figure {
   max-width: 100%;
   width: 100%;
   display: block;
-  /* opcional */
   -o-object-fit: cover;
   object-fit: cover;
-  /* opcional */
   -o-object-position: center center;
   object-position: center center;
 }
@@ -97,7 +87,6 @@ label {
   background-color: transparent;
   color: inherit;
   display: block;
-  /* opcional */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -111,8 +100,6 @@ td {
 }
 
 svg {
-  width: 100%;
-  display: block;
   fill: currentColor;
 }
 
