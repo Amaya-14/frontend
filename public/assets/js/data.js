@@ -22,12 +22,14 @@ const data = [
 const list = document.querySelector('#list')
 
 const dataOrder = data.sort((prev, next) => {
-  if (prev.name > next.name) return 1
-  if (prev.name < next.name) return -1
+  if (prev.title > next.title) return 1
+  if (prev.title < next.title) return -1
   return 0
 })
 
 let items = ''
+
+console.log(dataOrder)
 
 dataOrder.forEach(async (item) => {
   const { title, url, img, tags } = item
