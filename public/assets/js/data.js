@@ -22,6 +22,12 @@ const data = [
     url: './public/views/nft-preview-card-component/index.html',
     img: './public/assets/img/nft-preview-card-component.png',
     tags: ['html', 'css', 'javascipt']
+  },
+  {
+    title: 'JS encrypt',
+    url: 'https://amaya-14.github.io/JS-Encrypt/',
+    img: './public/assets/img/js-encrypt.png',
+    tags: ['html', 'css', 'javascipt']
   }
 ]
 
