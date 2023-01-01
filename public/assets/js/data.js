@@ -44,7 +44,9 @@ dataOrder.forEach(async (item) => {
 
   tags?.forEach(tag => {
     listTags += `
-    <p>${tag}</p>
+    <p>
+      <span>#</span>${tag}
+    </p>
     `
   })
 
