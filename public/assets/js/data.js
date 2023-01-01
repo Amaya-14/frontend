@@ -16,6 +16,12 @@ const data = [
     url: './public/views/interactive-rating-component/index.html',
     img: './public/assets/img/interactive-rating-component.png',
     tags: ['html', 'css', 'javascipt']
+  },
+  {
+    title: 'NFT preview card component',
+    url: './public/views/nft-preview-card-component/index.html',
+    img: './public/assets/img/nft-preview-card-component.png',
+    tags: ['html', 'css', 'javascipt']
   }
 ]
 
