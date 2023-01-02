@@ -158,6 +158,10 @@ main {
   .card__description {
     padding: 0 20px;
   }
+
+  .card__change {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
