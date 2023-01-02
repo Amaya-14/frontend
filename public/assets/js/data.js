@@ -36,9 +36,9 @@ const data = [
     tags: ['html', 'css']
   },
   {
-    title: 'Columns preview card component',
-    url: './public/views/3-column-preview-card-component/index.html',
-    img: './public/assets/img/order-summary-component.png',
+    title: 'Column preview card component',
+    url: './public/views/column-preview-card-component/index.html',
+    img: './public/assets/img/column-preview-card-component.png',
     tags: ['html', 'css']
   }
 ]
