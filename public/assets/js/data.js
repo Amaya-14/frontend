@@ -34,6 +34,12 @@ const data = [
     url: './public/views/order-summary-component/index.html',
     img: './public/assets/img/order-summary-component.png',
     tags: ['html', 'css']
+  },
+  {
+    title: 'Columns preview card component',
+    url: './public/views/3-column-preview-card-component/index.html',
+    img: './public/assets/img/order-summary-component.png',
+    tags: ['html', 'css']
   }
 ]
 

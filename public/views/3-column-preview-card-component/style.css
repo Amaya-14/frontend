@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+  --bright-orange: rgb(227, 136, 38);
+  --dark-cyan: rgb(0, 105, 112);
+  --very-dark-cyan: rgb(0, 66, 65);
+
+  /* paragraphs */
+  --transparent-white: rgba(255, 255, 255, 0.75);
+  /* background,
+  headings,
+  buttons */
+  --very-light-gray: rgb(242, 242, 242);
+}
+
+body {
+  font-family: 'Lexend Deca', 'Big Shoulders Display', sans-serif;
+  background-color: var(--very-light-gray);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+
+.card {
+  width: auto;
+  min-width: 300px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card__section {
+  padding: 45px;
+}
+
+.card__section>svg {
+  margin-bottom: 40px;
+}
+
+.card__sedans {
+  background-color: var(--bright-orange);
+}
+
+.card__suvs {
+  background-color: var(--dark-cyan);
+}
+
+.card__luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.card__title {
+  margin-bottom: 40px;
+  font-family: 'Big Shoulders Display';
+  font-size: 38px;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+
+.card__description {
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: var(--transparent-white);
+}
+
+.card__button {
+  width: fit-content;
+  padding: 16px 30px;
+  border-radius: 30px;
+  background-color: var(--very-light-gray);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  padding: 14px 30px;
+  color: var(--transparent-white);
+  background-color: transparent;
+  border: 2px solid var(--transparent-white);
+}
+
+.card__button--sedans {
+  color: var(--bright-orange);
+}
+
+.card__button--suvs {
+  color: var(--dark-cyan);
+}
+
+.card__button--luxury {
+  color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 360px) {
+  main {
+    align-items: center;
+  }
+
+  .card__description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-width: 912px;
+  }
+
+  .card__section {
+    min-height: 490px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__button {
+    margin-top: auto;
+  }
+
+}
