@@ -28,6 +28,12 @@ const data = [
     url: 'https://amaya-14.github.io/JS-Encrypt/',
     img: './public/assets/img/js-encrypt.png',
     tags: ['html', 'css', 'javascipt']
+  },
+  {
+    title: 'Order summary component',
+    url: './public/views/order-summary-component/index.html',
+    img: './public/assets/img/order-summary-component.png',
+    tags: ['html', 'css']
   }
 ]
 
