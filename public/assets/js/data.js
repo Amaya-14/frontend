@@ -40,6 +40,12 @@ const data = [
     url: './public/views/column-preview-card-component/index.html',
     img: './public/assets/img/column-preview-card-component.png',
     tags: ['html', 'css']
+  },
+  {
+    title: 'Stats preview card component',
+    url: './public/views/stats-preview-card-component/index.html',
+    img: './public/assets/img/stats-preview-card-component.png',
+    tags: ['html', 'css']
   }
 ]
 
