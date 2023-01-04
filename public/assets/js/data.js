@@ -46,6 +46,12 @@ const data = [
     url: './public/views/stats-preview-card-component/index.html',
     img: './public/assets/img/stats-preview-card-component.png',
     tags: ['html', 'css']
+  },
+  {
+    title: 'Four card feature section',
+    url: './public/views/four-card-feature-section/index.html',
+    img: './public/assets/img/four-card-feature-section.png',
+    tags: ['html', 'css']
   }
 ]
 
