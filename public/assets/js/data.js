@@ -7,7 +7,7 @@ const data = [
   },
   {
     title: 'QR code',
-    url: 'https://amaya-14.github.io/qr-code/',
+    url: 'https://daldev14.github.io/qr-code/',
     img: './public/assets/img/qr-code.png',
     tags: ['html', 'css', 'javascipt']
   },
@@ -25,7 +25,7 @@ const data = [
   },
   {
     title: 'JS encrypt',
-    url: 'https://amaya-14.github.io/JS-Encrypt/',
+    url: 'https://daldev14.github.io/JS-Encrypt/',
     img: './public/assets/img/js-encrypt.png',
     tags: ['html', 'css', 'javascipt']
   },
