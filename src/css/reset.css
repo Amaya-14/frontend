@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Reseteamos los margin y paddings de todas las etiquetas */
 * {
   margin: 0;
   padding: 0;
@@ -9,19 +10,30 @@
   vertical-align: baseline;
 }
 
+/* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
 }
 
+/* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
   font-size: 100%;
+  /* opcional */
   line-height: 1.4em;
+  /* opcional */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  /* opcional */
   font-smooth: always;
+  /* opcional */
   -webkit-font-smoothing: antialiased;
+  /* opcional */
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
 h1,
 h2,
 h3,
@@ -44,6 +56,7 @@ em {
   color: inherit;
 }
 
+/* Reseteamos los enlaces para funcionar como cajas... */
 a {
   display: block;
   text-decoration: none;
@@ -51,14 +64,17 @@ a {
   font-size: inherit;
 }
 
+/* ... excepto los que se encuentran en párrafos */
 p a {
   display: inline;
 }
 
+/* Quitamos los puntos de los <li> */
 li {
   list-style-type: none;
 }
 
+/* Evitamos problemas con las imagenes */
 img,
 picture,
 video,
@@ -67,12 +83,15 @@ figure {
   max-width: 100%;
   width: 100%;
   display: block;
+  /* opcional */
   -o-object-fit: cover;
   object-fit: cover;
+  /* opcional */
   -o-object-position: center center;
   object-position: center center;
 }
 
+/* Nivelamos problemas de tipografías y colocación de formularios */
 form,
 input,
 textarea,
@@ -87,11 +106,13 @@ label {
   background-color: transparent;
   color: inherit;
   display: block;
+  /* opcional */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
+/* Reseteamos las tablas */
 table,
 tr,
 td {
@@ -99,10 +120,14 @@ td {
   border-spacing: 0;
 }
 
+/* Evitamos problemas con los SVG */
 svg {
+  width: 100%;
+  display: block;
   fill: currentColor;
 }
 
+/* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before,
 blockquote:after,
 q:before,
