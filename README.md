@@ -1,8 +1,8 @@
-# Frontend
+# html-components
 
 <div align="center">
-  <a href="https://daldev14.github.io/frontend/">
-    <img src="https://user-images.githubusercontent.com/49620375/227819707-4e2a09c9-1a48-4621-9d8f-b156bb68156e.png" />
+  <a href="https://daldev14.github.io/html-components/">
+    <img src="https://github.com/daldev14/html-components/assets/49620375/6210762d-937c-4ea2-b240-2be45c0fc97d" />
   </a>
 </div>
 
